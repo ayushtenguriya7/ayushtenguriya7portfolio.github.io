@@ -1,0 +1,145 @@
+/* Basic Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #0e0e0e;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #20232a;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #61dafb;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #61dafb;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 18px;
+    background-color: #61dafb;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.about-section, .skills-section, .projects-section, .contact-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-section h2, .skills-section h2, .projects-section h2, .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.skills-grid, .projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skill-card, .project-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card h3, .project-card h3 {
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #20232a;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    color: #61dafb;
+}
+
+@media (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .skills-grid, .projects-grid {
+        flex-direction: column;
+    }
+}
